@@ -3,5 +3,7 @@
 let
   pkgs = import <nixpkgs> { inherit system; };
   callPackage = pkgs.lib.callPackageWith (pkgs // self);
-  self = {};
+  self = {
+    goread = callPackage ./pkgs/goread {};
+  };
 in self
