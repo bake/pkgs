@@ -5,5 +5,6 @@ let
   callPackage = pkgs.lib.callPackageWith (pkgs // self);
   self = {
     goread = callPackage ./pkgs/goread {};
+    mri = callPackage ./pkgs/mri {};
   };
 in self
