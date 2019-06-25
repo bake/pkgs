@@ -7,5 +7,5 @@ This is an unstable nix-channel for testing purposes.
 ```
 $ nix-channel --add https://github.com/bake/pkgs/archive/master.tar.gz bake
 $ nix-channel --update
-$ nix-channel -iA bake.goread
+$ nix-env -iA bake.goread
 ```
