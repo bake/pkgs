@@ -21,6 +21,6 @@ buildGoPackage {
   meta = with stdenv.lib; {
     description = "Decoder for MangaRock images (.mri)";
     homepage = "https://github.com/bake/mri";
-    maintainers = with maintainers; [ bake ];
+    maintainers = with import ../../maintainers.nix; [ bake ];
   };
 }

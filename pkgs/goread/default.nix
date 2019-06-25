@@ -19,6 +19,6 @@ buildGoModule rec {
     description = "Static RSS reader generator";
     homepage = "https://github.com/bake/goread";
     license = licenses.gpl3;
-    maintainers = with maintainers; [ bake ];
+    maintainers = with import ../../maintainers.nix; [ bake ];
   };
 }
