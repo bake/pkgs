@@ -2,13 +2,13 @@
 
 buildGoModule rec {
   name = "goread-${version}";
-  version = "1.0.1";
+  version = "1.1.0";
 
   src = fetchFromGitHub {
     owner = "bake";
     repo = "goread";
     rev = "v${version}";
-    sha256 = "0mjfrp991pkwa8p6hd23n5la96zi8s3s3kbzg6v1sz39lw5rkvd9";
+    sha256 = "1hzrbdqma4hmfflw1fpfc2s8dw9d727qx8v9issafybx91l6933w";
   };
 
   modSha256 = "1hayqycj5wnmv71hrv69kgdh6s3rah0ifxvbz922ccdh9fv1gzrg";
