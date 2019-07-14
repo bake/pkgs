@@ -1,4 +1,4 @@
-{ stdenv, buildGoPackage, fetchFromGitHub }:
+{ buildGoPackage, fetchFromGitHub }:
 
 buildGoPackage {
   name = "mri";
@@ -18,7 +18,7 @@ buildGoPackage {
 
   goDeps = ./deps.nix;
 
-  meta = with stdenv.lib; {
+  meta = {
     description = "Decoder for MangaRock images (.mri)";
     homepage = "https://github.com/bake/mri";
     maintainers = with import ../../maintainers.nix; [ bake ];

@@ -1,4 +1,4 @@
-{ lib, buildGoModule, fetchFromGitHub }:
+{ buildGoModule, fetchFromGitHub }:
 
 buildGoModule rec {
   name = "goread-${version}";
@@ -15,7 +15,7 @@ buildGoModule rec {
 
   buildFlagsArray = "-ldflags=-X main.version=${version}";
 
-  meta = with lib; {
+  meta = {
     description = "Static RSS reader generator";
     homepage = "https://github.com/bake/goread";
     license = licenses.gpl3;
