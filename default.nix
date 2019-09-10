@@ -6,6 +6,7 @@ let
   self = {
     ddate-sh = callPackage ./pkgs/ddate-sh {};
     goread = callPackage ./pkgs/goread {};
+    mdl = callPackage ./pkgs/mdl {};
     mri = callPackage ./pkgs/mri {};
   };
 in self
